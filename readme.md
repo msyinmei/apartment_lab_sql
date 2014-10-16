@@ -23,14 +23,30 @@ Write down the following sql statements that are required to solve the following
 
 ```    
 1. Show all the tables.
+\dt
+
 2. Show all the users. 
 3. Show all the data in the owners table.
+SELECT * FROM owners;
+
 4. Show the names of all owners. 
+SELECT name FROM owners;
+
 5. Show the ages of all of the owners in ascending order. 
+SELECT age FROM owners ORDER BY age ASC;
+
 6. Show the name of an owner whose name is Donald. 
+SELECT name FROM owners WHERE name = 'Donald';
+
 7. Show the age of all owners who are older than 30. 
+SELECT age FROM owners WHERE age > 30;
+
 8. Show the name of all owners whose name starts with an E. 
+SELECT name FROM owners WHERE name LIKE 'e%';
+
 9. Add an owner named John who is 33 years old to the owners table.
+
+
 10. Add an owner named Jane who is 43 years old to the owners table. 
 11. Change Jane's age to 30. 
 12. Change Jane's name to Janet. 
