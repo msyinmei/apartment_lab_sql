@@ -86,5 +86,8 @@ Bonus (this might require you to look up documentation online)
 
 ```
 1. In the properties table change the name of the column "name" to "property_name". 
+ALTER TABLE properties 
+	RENAME name TO property_name;
+
 2. Count the total number of properties where the owner_id is between 1 and 3.
 ```
