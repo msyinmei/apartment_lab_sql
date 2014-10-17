@@ -90,4 +90,5 @@ ALTER TABLE properties
 	RENAME name TO property_name;
 
 2. Count the total number of properties where the owner_id is between 1 and 3.
+SELECT count(*) FROM properties WHERE ownerId BETWEEN 1 AND 3;
 ```
